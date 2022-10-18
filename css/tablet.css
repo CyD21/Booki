@@ -1,0 +1,166 @@
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+  #container {
+    width: 98%;
+  }
+  
+  /** Section accommodation **/
+  .accommodation {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .accommodation article {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 50%;
+    padding: 10px;
+  }
+  #accommodation {
+    width: 100%;
+  }
+  .accommodation article h2,
+  h3 {
+    padding-left: 0px;
+  }
+  .accommodation aside {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+  }
+  #info {
+    margin: 60px 0px 20px 0px;
+  }
+  /** Main Page Card Article **/
+  .ContainerCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin: 0px;
+  }
+  .MainCard {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  /** Card popular **/
+  .ContainerCardPop {
+    display: flex;
+    flex-direction: column;
+  }
+  .MainCardPop {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px #999;
+  }
+  .MainCardPop a {
+    display: flex;
+    text-decoration: none;
+  }
+  .MainCardPop:hover {
+    box-shadow: 0px 4px 8px #999;
+  }
+  .ImageCardPop {
+    width: 40%;
+  }
+  .ImageCardPop img {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+  }
+  .BodyCardPop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    padding: 10px 0px 5px 5px;
+  }
+  .TitleCardPop {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .PriceCardPop {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .PriceCardPop span {
+    font-weight: bold;
+  }
+  .NoteCardPop {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    height: 100%;
+    margin: 0px;
+  }
+  /** Main Page Card Activity **/
+  .Activity-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+  }
+
+  #ActivityItem-0 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+  }
+  #ActivityItem-1 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+  }
+  #ActivityItem-2 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+  }
+  #ActivityItem-3 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+  }
+  #ActivityItem-4 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+  }
+  #ActivityItem-5 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 3;
+  }
+  /**? Card activity 200px **/
+  .ImageActivity img {
+    height: 200px;
+  }
+  /**? Card activity 200px**/
+  .ImageActivity01 img {
+    height: 200px;
+  }
+  /**? Card activity 150px**/
+  .ImageActivity02 img {
+    height: 200px;
+  }
+}

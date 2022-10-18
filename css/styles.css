@@ -1,0 +1,484 @@
+/**
+Cyrille DUTOIT
+Projet 2 OpenClassrooms
+cyrille.dutoit@gmail.com
+colors Base #0065FC #DEEBFF
+Background color #F2F2F2
+font Google Raleway
+**/
+
+/**======== Box sizing ===========================**/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/**=========== Styles Body ======================**/
+body {
+  font-family: "Raleway", serif;
+  font-size: 14px;
+}
+a {
+  color: black;
+}
+a:visited {
+  color: #000;
+}
+main {
+  margin: 0px;
+  padding: 0px;
+}
+#container {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#notitle {
+  display: none;
+}
+/*******************************/
+/*! Styles header,logo and nav*/
+/*******************************/
+header {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+}
+/** Nav **/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+nav div {
+  display: flex;
+  width: 20%;
+}
+.btn_accommodation a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+  font-size:medium;
+  padding-top: 30px;
+}
+.btn_activity a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  border-top: 2px solid #fff;
+  font-size: medium;
+  padding-top: 30px;
+}
+.btn_activity a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
+/*************** Research **************************/
+.research {
+  margin: 0px;
+  padding: 0px;
+}
+.ResearchText {
+  font-size: 16px;
+}
+.FormSearchDesktop {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.FormSearchMobil {
+  display: none;
+}
+.location {
+  background-color: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+}
+.location i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+}
+.search {
+  margin: 0px;
+}
+.search input {
+  height: 40px;
+  width: 230px;
+  padding-left: 10px;
+  border: none;
+  font-weight: bold;
+}
+.ButtonSearch button {
+  height: 40px;
+  width: 100px;
+  background-color: #0065fc;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  color: #fff;
+  cursor: pointer;
+}
+/*************** Filters ***************************/
+.filters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  font-weight: bold;
+}
+.FiltersText {
+  margin-right: 10px;
+}
+.filters a {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  background-color: #fff;
+  color: black;
+  border: 1px solid #f2f2f2;
+  border-radius: 50px;
+  margin: 10px 20px 0px 0px;
+  padding-right: 10px;
+  text-decoration: none;
+  overflow: visible;
+}
+
+.filters i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  background-color: #deebff;
+  color: #0065fc;
+  padding: 5px;
+  margin: 0px 5px 0px 0px;
+  border-radius: 50px;
+  overflow: auto;
+}
+.filters a:hover {
+  background-color: #deebff;
+}
+/****************** Info ******************************/
+.info {
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  font-size: 14px;
+}
+.info i {
+  color: #0065fc;
+  margin-right: 10px;
+}
+/******************* Main Page (Accommodation, Popular and Activity) ************************/
+.accommodation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.accommodation article {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+  margin-right: 30px;
+}
+.accommodation article h2,
+h3 {
+  padding-left: 20px;
+}
+.accommodation aside {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  width: 30%;
+  padding: 10px;
+}
+.HeadPop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5px 0px 5px;
+}
+/**? Card accommodation **/
+.ContainerCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+.MainCard {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px #999;
+}
+.MainCard a {
+  color: #000;
+  text-decoration: none;
+}
+.MainCard:hover {
+  box-shadow: 0 8px 8px 0 #999;
+}
+.ImageCard {
+  padding: 5px;
+}
+.ImageCard img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+.BodyCard {
+  background-color: #fff;
+  color: black;
+  height: 60px;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.TitleCard {
+  font-weight: bold;
+}
+.PriceCard {
+  margin: 0px;
+}
+.PriceCard span {
+  font-weight: bold;
+}
+.NoteCard {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+}
+.StarBlue i {
+  color: #0065fc;
+}
+.StarGray i {
+  color: #ccc;
+}
+/**? Card popular **/
+.ContainerCardPop {
+  display: flex;
+  flex-direction: column;
+}
+.MainCardPop {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px #999;
+}
+.MainCardPop a {
+  display: flex;
+  text-decoration: none;
+}
+.MainCardPop:hover {
+  box-shadow: 0px 4px 8px #999;
+}
+.ImageCardPop {
+  width: 40%;
+}
+.ImageCardPop img {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  padding: 5px;
+  object-fit: cover;
+  border-radius: 20px 0px 0px 20px;
+}
+.BodyCardPop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  padding: 10px 0px 5px 5px;
+}
+.TitleCardPop {
+  font-weight: bold;
+}
+.PriceCardPop {
+  margin-top: 10px;
+}
+.PriceCardPop span {
+  font-weight: bold;
+}
+.NoteCardPop {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding-top: 20px;
+}
+/**============ Styles Block Activity ===================**/
+/**? Style Grid activity **/
+.Activity-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  margin: 10px auto;
+  align-items: flex-end;
+  
+}
+.ActivityLink {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px #ccc;
+  text-decoration: none;
+}
+.ActivityLink:hover {
+  box-shadow: 0px 4px 8px #ccc;
+}
+#ActivityItem-0 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+  padding: 5px;
+}
+#ActivityItem-1 {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 4;
+  padding: 5px;
+}
+#ActivityItem-2 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+  padding: 5px;
+}
+#ActivityItem-3 {
+  grid-row-start: 2;
+  grid-column-start: 4;
+  grid-row-end: 3;
+  grid-column-end: 5;
+  padding: 5px;
+}
+#ActivityItem-4 {
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 2;
+  grid-column-end: 5;
+  padding: 5px;
+}
+#ActivityItem-5 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 3;
+  padding: 5px;
+}
+/**? Card activity 400px **/
+.CardActivity {
+  display: flex;
+  flex-direction: column;
+}
+.ImageAcivity {
+  margin: 0px;
+}
+.ImageActivity img {
+  margin: 0px;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.TitleActivity {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+/**? Card activity 200px**/
+.CardActivity01 {
+  display: flex;
+  flex-direction: column;
+}
+.ImageAcivity01 {
+  margin: 0px;
+}
+.ImageActivity01 img {
+  margin: 0px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.TitleActivity01 {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+/**? Card activity 150px**/
+.CardActivity02 {
+  display: flex;
+  flex-direction: column;
+}
+.ImageAcivity02 {
+  margin: 0px;
+}
+.ImageActivity02 img {
+  margin: 0px;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.TitleActivity02 {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+/************************************************************/
+/********************** Footer ******************************/
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #f2f2f2;
+  padding: 0px 20px 0px 20px;
+}
+.BlockFooter {
+  padding-top: 10px;
+  width: 33%;
+}
+.BlockFooter p {
+  margin-left: 20px;
+}
+.BlockFooter a {
+  font-size: 16px;
+  text-decoration: none;
+}
